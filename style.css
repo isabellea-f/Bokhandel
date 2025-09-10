@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,28 +7,28 @@
 :root {
   --primary-color: #69a297;
   --accent-color: #50808e;
-  --white-color: #ddd8c4;
+  --beige-color: #f6f5f1;
+  --white-color: #fdfdfd;
   --black-color: #0e0d0d;
   --gray-color: #333;
 }
 
 body {
-  background-color: var(--white-color);
-  font-family: "Lato", sans-serif;
+  background-color: var(--beige-color);
+  font-family: "poppins", sans-serif;
   color: var(--gray-color);
   line-height: 1.6rem;
   font-size: 16px;
 }
 
+/* Typography */
+
 h1,
 h2,
 h3,
 h4 {
+  font-weight: 400;
   font-family: "playfair display", sans-serif;
-}
-
-header {
-  padding: 1.2rem 0;
 }
 
 a {
@@ -41,16 +40,26 @@ a:hover {
   color: var(--accent-color);
 }
 
+/* Header / Logo */
+
+header {
+  padding: 1.2rem 0;
+  background-color: var(--white-color);
+}
+
 .logo {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 300;
 }
+
+/* Navigation */
 
 nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
 }
 
 nav ul {
@@ -60,7 +69,10 @@ nav ul {
 
 nav li {
   padding-left: 1rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,4 +89,9 @@ nav li {
   nav li {
     padding: 0.5rem 0;
   }
+}
+
+/* Hero section */
+#hero {
+  height: 600px;
 }
