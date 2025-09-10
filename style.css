@@ -171,19 +171,28 @@ nav li a:hover {
   margin: 2rem 0;
 }
 
-.slider {
+.cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
-  overflow-x: auto;
-  gap: 4rem;
 }
 
-.slide {
-  min-width: 200px;
-  flex: 0 0 auto;
+.card {
   text-align: center;
+  padding: 0.5rem;
 }
 
-.slide img {
-  width: 15rem;
+.card img {
+  width: 100%;
+  max-width: 15rem;
+  height: 23rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: "poppins";
+  font-size: 1.2rem;
 }
