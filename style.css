@@ -31,6 +31,15 @@ h4 {
   font-family: "playfair display", sans-serif;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
   color: var(--black-color);
@@ -99,6 +108,7 @@ nav li a:hover {
   align-items: center;
   background-color: var(--beige-color);
   padding: 8rem 5rem;
+  margin-bottom: 4rem;
 }
 
 .hero-image {
@@ -155,44 +165,59 @@ nav li a:hover {
   padding: 9px;
 }
 
+.btn-white {
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  padding: 9px;
+}
+
 .btn:hover {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
 
-/* Latest books / Slider */
-
-#latest-books {
-  text-align: center;
-}
-
-#latest-books h2 {
-  font-size: 2.5rem;
-  margin: 2rem 0;
-}
-
-.cards {
+.double-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  margin-bottom: 4rem;
+  background-color: var(--beige-color);
+}
+
+.order-online,
+.latest-article {
+  width: 50%;
+}
+
+.order-online {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/books-plant.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-.card {
+  align-items: center;
   text-align: center;
-  padding: 0.5rem;
+  color: var(--white-color);
 }
 
-.card img {
-  width: 100%;
-  max-width: 15rem;
-  height: 23rem;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+.order-online h2 {
+  font-size: 2.2rem;
 }
 
-.card h3 {
-  font-family: "poppins";
-  font-size: 1.2rem;
+.latest-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.latest-article p,
+.order-online p {
+  padding: 2rem 4.5rem;
+}
+
+#contact {
+  background-color: var(--beige-color);
 }
