@@ -50,18 +50,38 @@
   </article>
 </div>
 
-      <aside></aside>
+<div class="contact-form-container">
 
-      <!-- Om oss med kontakformulär -->
-       <section id="contact">
-        <h2>Har du frågor? Vi hjälper dig gärna!</h2>
-        <h3>Adress</h3>
-        <h3>Öppettider</h3>
-        <h4>E-post</h4>
-        <h4>Telefonnummer</h4>
+  <aside>
+    <h2>Har du frågor? Vi hjälper dig gärna!</h2>
+    <div class="contact-info">
+      <p><strong>Adress:</strong> Exempelgatan 1, 123 45 Stad</p>
+      <p><strong>Öppettider:</strong> Mån–Fre 09:00–18:00</p>
+      <p><strong>E-post:</strong> info@bokhandel.se</p>
+      <p><strong>Telefonnummer:</strong> 012-345 6789</p>
+    </div>
+  </aside>
 
-        <form action=""></form>
-       </section>
+  <section id="contact">
+  <form action="/my-handling-form-page" method="post">
+  <p>
+    <label for="name">Namn:</label>
+    <input type="text" id="name" name="user_name" />
+  </p>
+  <p>
+    <label for="mail">E-post</label>
+    <input type="email" id="mail" name="user_email" />
+  </p>
+  <p>
+    <label for="msg">Meddelande:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </p>
+  <p>
+  <button type="submit" class="btn">Skicka</button>
+</p>
+</form>
+</section>
+</div>
 
       <!-- Footer -->
     </main>

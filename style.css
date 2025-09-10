@@ -162,6 +162,7 @@ nav li a:hover {
 
 .btn {
   border: 1px solid var(--black-color);
+  background: transparent;
   padding: 9px;
 }
 
@@ -218,6 +219,57 @@ nav li a:hover {
   padding: 2rem 4.5rem;
 }
 
-#contact {
+/* Contact */
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--beige-color);
+  padding: 40px;
+  background-image: url("/images/white-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--black-color);
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+  }
 }
