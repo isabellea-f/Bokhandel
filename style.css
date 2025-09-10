@@ -159,3 +159,31 @@ nav li a:hover {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
+
+/* Latest books / Slider */
+
+#latest-books {
+  text-align: center;
+}
+
+#latest-books h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 4rem;
+}
+
+.slide {
+  min-width: 200px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.slide img {
+  width: 15rem;
+}
