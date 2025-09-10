@@ -116,6 +116,38 @@ nav li a:hover {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/book-mockup.jpg");
+    color: var(--white-color);
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-container .btn {
+    margin-top: 1.5rem;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+  }
+}
+
 /* Button */
 
 .btn {
