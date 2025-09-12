@@ -133,7 +133,7 @@ nav li a:hover {
     text-align: center;
     padding: 3rem 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/images/book-mockup.jpg");
+      url("images/book-mockup.jpg");
     color: var(--white-color);
   }
 
@@ -190,7 +190,7 @@ nav li a:hover {
 
 .order-online {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/books-plant.jpg");
+    url("images/books-plant.jpg");
   background-size: cover;
   background-position: center;
   height: 450px;
@@ -226,7 +226,7 @@ nav li a:hover {
   justify-content: space-evenly;
   background-color: var(--beige-color);
   padding: 40px;
-  background-image: url("/images/white-background.jpg");
+  background-image: url("images/white-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
